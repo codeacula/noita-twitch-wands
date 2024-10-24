@@ -2,7 +2,9 @@
 import { RouterView } from 'vue-router'
 import { useWandStore } from './stores/wand'
 
-useWandStore()
+const wands = useWandStore()
+
+wands.updateStreamerHandle('Codeacula')
 </script>
 
 <template>
